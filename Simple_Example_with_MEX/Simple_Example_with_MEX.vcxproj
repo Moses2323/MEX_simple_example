@@ -123,7 +123,7 @@
       </Command>
     </CustomBuildStep>
     <PostBuildEvent>
-      <Command>echo copy $(OutDir)$(SolutionName).mexw64 $(SolutionDir) &amp;&amp; copy $(OutDir)$(SolutionName).mexw64 $(SolutionDir)</Command>
+      <Command>echo copy "$(OutDir)$(ProjectName).mexw64" "$(SolutionDir)" &amp;&amp; copy "$(OutDir)$(ProjectName).mexw64" "$(SolutionDir)"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -167,7 +167,7 @@
       </Command>
     </CustomBuildStep>
     <PostBuildEvent>
-      <Command>echo copy $(OutDir)$(SolutionName).mexw64 $(SolutionDir) &amp;&amp; copy $(OutDir)$(SolutionName).mexw64 $(SolutionDir)</Command>
+      <Command>echo copy "$(OutDir)$(ProjectName).mexw64" "$(SolutionDir)" &amp;&amp; copy "$(OutDir)$(ProjectName).mexw64" "$(SolutionDir)"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
