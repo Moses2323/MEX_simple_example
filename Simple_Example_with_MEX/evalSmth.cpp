@@ -26,7 +26,8 @@ bool checkingMATLABarguments( int nlhs, mxArray* plhs[],
  *  \param nrhs number of input mxArrays
  *  \param prhs array of pointers to the input mxArrays.
  */
-void mexFunction( int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[] )
+MEXFUNCTION_LINKAGE
+void mexFunction( int nlhs, mxArray* plhs[], int nrhs, const mxArray* prhs[] )
 {
     mexPrintf( "Starting MEX function\n" );
 
